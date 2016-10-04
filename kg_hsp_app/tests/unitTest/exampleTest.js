@@ -30,5 +30,10 @@ describe("calculator", function () {
             result = calc.divide(25,5);
             assert.equal(result,5);
         });
+
+        it('should divide 35 to 5 and return 5', function () {
+            result = calc.divide(35,5);
+            assert.equal(result,7);
+        });
     });
 });
