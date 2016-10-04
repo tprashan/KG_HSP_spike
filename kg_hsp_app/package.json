@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "unitTest" : "sh ./build_script/runUnitTest.sh",
+    "unitTest" : "./build_script/runUnitTest.sh",
     "integrationTest" : "sh ./build_script/runIntegrationTest.sh",
     "tests" : "sh ./build_script/runTests.sh"
   },
