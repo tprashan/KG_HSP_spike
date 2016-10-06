@@ -1,5 +1,13 @@
 extends layout
 
 block content
- h3 Welcome to KG Hospital
- a(href='/auth/google') Sign in With google
+ script(src="/javascripts/login.js")
+ include _title
+ div(class="container text-center")
+  div(class="container")
+   div(class="well col-md-6 col-md-offset-3")
+    h3 Please login only with your Gmail Account.
+    form(class="login" action='/users' method='POST')
+     input(type="text" class="userName" maxlength='50' placeholder="Name of the user" name="name" required)
+     input(type="password" class="password" maxlength='50' placeholder="password" name="password" required)
+     button(type="submit" class="btn btn-default pull-right") login
